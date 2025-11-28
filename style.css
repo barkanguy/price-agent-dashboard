@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 16px 24px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+}
+
+header .meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+header .controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+header button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#btn-refresh {
+  background: #2196f3;
+  color: #fff;
+}
+
+#btn-toggle-auto {
+  background: #ff9800;
+  color: #fff;
+}
+
+header button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.progress-container {
+  margin-top: 12px;
+  width: 100%;
+  max-width: 400px;
+  height: 10px;
+  background: #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+main {
+  padding: 16px 24px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 14px;
+  text-align: right;
+}
+
+th {
+  background: #eee;
+}
+
+tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+tr.status-better td {
+  background: #d9fdd3;
+}
+
+tr.status-worse td {
+  background: #ffd6d6;
+}
+
+tr.status-none td {
+  color: #777;
+}
+
+a {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px 24px 16px 24px;
+  font-size: 12px;
+  color: #555;
+}
