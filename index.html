@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="utf-8" />
+  <title>דשבורד סוכן השוואת מחירים</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body dir="rtl">
+  <header>
+    <h1>דשבורד סוכן השוואת מחירים</h1>
+    <div class="meta">
+      <div>סטטוס ריצה: <span id="status-running">לא ידוע</span></div>
+      <div>עודכן לאחרונה: <span id="status-time">—</span></div>
+      <div>מוצרים מעובדים: <span id="status-count">0 / 0</span></div>
+    </div>
+    <div class="controls">
+      <button id="btn-refresh" type="button">רענן עכשיו</button>
+      <button id="btn-toggle-auto" type="button">עצור רענון אוטומטי</button>
+    </div>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>טבלת מוצרים</h2>
+      <table id="products-table">
+        <thead>
+          <tr>
+            <th>שם מוצר</th>
+            <th>דגם</th>
+            <th>מחיר ששילמת</th>
+            <th>מחיר שנמצא</th>
+            <th>הפרש (שילמת - נמצא)</th>
+            <th>סטטוס</th>
+            <th>קישור</th>
+            <th>צילום מסך</th>
+          </tr>
+        </thead>
+        <tbody id="products-body">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>הדשבורד מתעדכן מקובץ <code>status.json</code> בריפו GitHub.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
