@@ -2,7 +2,7 @@
 // דשבורד לקריאת status.json מריפו GitHub
 
 // עדכן כאן את שם המשתמש שלך בגיטהאב
-const GITHUB_USERNAME = "YOUR_GITHUB_USERNAME"; // לדוגמה: "GuyBarkan"
+const GITHUB_USERNAME = "Guy Barkan"; // לדוגמה: "GuyBarkan"
 const STATUS_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/price-agent-dashboard/main/status.json`;
 
 let autoRefresh = true;
